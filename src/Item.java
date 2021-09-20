@@ -16,12 +16,10 @@ public class Item {
         tax = price * 0.19;
     }
 
-    public boolean canitBeSold(Date expiration) {
+    public boolean canItBeSold () {
         Date today = new Date();
-        if (expiration.after(today)) {
-            return false;
-        } else {
-            return true;
-        }
+        return expirationDate.after(today);
+
     }
+
 }
