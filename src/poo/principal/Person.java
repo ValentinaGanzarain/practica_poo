@@ -1,4 +1,4 @@
-package src;
+package src.poo.principal;
 
 public class Person {
 
